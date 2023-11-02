@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 def get_model():
-    data_set= pd.read_csv("D:\\CTU_Subject\\MHUD\\Dataset\\flare.csv",sep=" ")
+    data_set= pd.read_csv("fl.csv",sep=" ")
 
     from sklearn.preprocessing import LabelEncoder
     lb_col0=LabelEncoder()
