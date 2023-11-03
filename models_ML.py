@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
+import os
 def get_model():
-    data_set= pd.read_csv("fl.csv",sep=" ")
+    
+    data_set= pd.read_csv(os.environ.get("data_set"),sep=" ")
 
     from sklearn.preprocessing import LabelEncoder
     lb_col0=LabelEncoder()
