@@ -11,7 +11,7 @@ def encode_data_class(tmp):
                 'F':5,
                 'H':6
              }
-    return switcher.get(tmp.upper(), -1)
+    return switcher.get(str(tmp).upper(), -1)
 def encode_data_largest_spot_size(tmp):
     switcher={
                 'X':0,
